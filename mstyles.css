@@ -1,0 +1,200 @@
+
+:root {
+  --blue: #1d2f6f;
+  --lightBlue: #8390fa;
+  --yellow: #fac748;
+  --white: #f9e9ec;
+  --pink: #f88dad;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+}
+
+body{
+  background-color: var(--yellow);
+}
+
+/* Header */
+
+header{  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  background: var(--yellow);  
+  color: #fff;
+  letter-spacing: 5px;
+  font-size: 3rem; 
+  margin: 20px;
+}
+
+h2{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 60px;
+  justify-content: center;
+  font-size: 1.2rem;
+  background-color: var(--lightBlue);
+  color: var(--white);
+  height: 60px;
+}
+
+/* form */
+
+.wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form{
+  margin: 50px;
+  padding: 50px;
+  align-self: center;
+  background-color: var(--white);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 800px;
+  width: 800px;
+}
+
+.amount_container{
+  display: block;
+  padding: 10px;
+  margin: 0 auto;
+ 
+}
+
+.amount_container p{
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+input {
+  color: black;
+  padding: 5px;
+  font-size: 1rem;
+  margin: 20px;
+}
+
+input:focus {
+  border: 3px solid var(--blue);
+}
+
+button{
+  width: 250px;
+  height: 80px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  border-color: #fff;
+  background-color: var(--lightBlue);
+  display: block;
+  margin: 10px auto;
+}
+
+
+button:hover{
+  background-color: var(--yellow);
+}
+
+
+.result{
+  display: block;
+  margin: 0 auto;
+  font-size: 2rem;
+  text-align: center;
+  height: 140px;
+  width: 400px;
+  border-radius: 20px;
+  align-self: center;
+  background-color: #fff;
+  
+}  
+
+
+#image{
+margin: 2rem;
+justify-content: center;
+}
+
+
+.summary{
+  display: block;
+  margin: 0 auto;
+  align-self: center;
+  font-size: 1.5rem;
+  text-align: center;
+  max-width: 500px;
+}
+
+@media screen and (max-width: 800px) {
+.summary p{
+  font-size: 1rem;
+}
+}
+
+
+
+select{
+  display: block;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+form #pic.icon{
+  display: flex;
+  align-self: center;
+  text-align: center;
+  background-image: url('images/swap.png');
+  background-size: contain;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+
+}
+#pic:hover {
+   -webkit-animation:spin 2s linear infinite;
+    -moz-animation:spin 2s linear infinite;
+    animation:spin 2s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+
+.from{
+  text-align: center;
+}
+
+.to{
+  text-align: center;
+}
+
+
+.to-text {
+  align-self: center;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.from-text {
+  align-self: center;
+  padding: 10px;
+  text-align: center;
+}
+

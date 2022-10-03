@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="mstyles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200&family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+   </head>
+  <body>
+
+    <!--Header-->
+  <header>Currency Converter</header>
+    <div class="welcome">
+      <h2>Welcome To My World Currency Converter</h2>
+    </div>
+  <div class="wrapper">
+    <form action="#">
+
+          <!--Amount-->
+  <div class="amount_container">
+    <div class="amount">
+      <p>Enter Amount: </p>
+    </div>
+      <input type="number" value="1" placeholder="Enter Amount:">
+  </div>
+    <!--Exhange rate-->
+    <button>Calculate Exchange Rate</button>
+      <!--Result-->
+      <div class="result"></div>
+    
+    
+
+      <!--From dropdown-->
+        <div class="From-container">
+          <div class="from-text">
+            <p>FROM</p>
+            </div>
+            <div class="from">
+              <select> <!--js-->> </select>
+              <img src="https://flagcdn.com/w160/us.jpg" alt="flag" id ="image">
+          </div>
+          </div>
+
+          <div class="summary">
+            <p>Enter the amount of money and country you want to convert from. Then, chose what currency to would like to convert it into. Click the "Calculate Exchange Rate" button to convert. To see the reversed rate, click the arrow icon. </p>
+          </div>
+        
+        
+        <!--TO dropdown-->
+        <div class="To-container">
+          <div class="icon" id="pic"></div>
+          <div class="to-text">
+            <p>TO</p>
+          </div>
+            <div class="to">
+               <select> <!--js--> </select>
+              <img src="https://flagcdn.com/w160/gb.jpg" alt="flag" id="image">
+            </div>
+        </div>
+        
+        
+      
+  </form>
+  </div>
+    <script src="country-list.js"></script>
+    <script src="cscript.js"></script>
+  </body>
+</html>
