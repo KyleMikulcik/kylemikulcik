@@ -123,7 +123,6 @@
 
 .main_container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-self: center;
     margin: 20 auto;
@@ -134,17 +133,14 @@
    
 }
 
-.main_content h1 { 
-    padding-top: 20px;
+.main_content h1 {
+    padding-top: 20px; 
     font-size: 3.5rem;
     text-align: center;
     background-color: var(--tan);
     color: #fff;
     font-family: 'San-sherif', sans-serif;
     animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
 }
 
   .main_content h2 {
@@ -155,10 +151,6 @@
     background-color: var(--tan);
     color: #fff;
     font-family: 'San-sherif', sans-serif;
-    animation-name: floating;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
   }
 
   .main_content p {
@@ -188,13 +180,6 @@
   font-family: 'Source Code Pro', monospace;
 }
 
-
-.main_img_container {
-    text-align: right;
-    margin-bottom: -50px;
-}
-
-
 @media screen and (max-width: 768px) {
     .main_container {
       display: flex;
@@ -202,15 +187,8 @@
       align-items: center;
       justify-self: center;
       width: 100%;
-      margin: 0 auto;
-      height: 100vh;
-    }
-.main_img_container{
-  padding-left: 175px;
-  margin-top: -70px;
-}
-
-  
+      height: 40vh;
+    }  
     .main_content {
       text-align: center;
       margin-bottom: 4rem;
@@ -219,10 +197,19 @@
       font-size: 1.5rem;
       margin-top: 1rem;
     }
+    .main_content h1 {
+      font-size: 2rem;
+      margin-top: 1.5rem;
+    }
+    .main_content h2 {
+      font-size: 2rem;  
+    }
 
     .line-drop1-move{
       padding-top: 10px;
     }
+
+
 }
 
   
@@ -352,7 +339,7 @@ animation-timing-function: ease-in-out;
     to bottom,
     rgba(0,0,0,0) 0%,
     rgba(17,17,17,0.6) 100%),
-    url('images/earth.png');
+    url('images/Rocket.png');
     background-size: cover;
     position: relative;
     color: #fff;
@@ -363,7 +350,7 @@ animation-timing-function: ease-in-out;
     to bottom,
     rgba(0,0,0,0) 0%,
     rgba(17,17,17,0.6) 100%),
-    url('images/pic1.png');
+    url('images/earth.png');
 
 }
 
